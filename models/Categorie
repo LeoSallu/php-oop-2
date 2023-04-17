@@ -1,0 +1,8 @@
+<?php
+
+class Categorie{
+
+    public $categorie = ['Cani', 'Gatti','Uccelli', 'Pesci'];
+
+
+}
