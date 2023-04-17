@@ -8,3 +8,4 @@ class Categorie {
     }
 }
 $category = new Categorie('Cane','Gatto','Ucello','Pesce');
+

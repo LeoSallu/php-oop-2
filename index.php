@@ -2,7 +2,6 @@
 require __DIR__.'/models/Prodotti.php';
 require __DIR__.'/models/Categorie.php';
 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
