@@ -1,12 +1,12 @@
 <?php
-class Prodotti  {
+class Prodotti{
 
     //Inizializzazione Variabili
-    public $prodotti;
-    public $animale;
-    public $prezzo;
-    public $caratteristiche;
-    public $info;
+    protected $prodotti;
+    protected $animale;
+    protected $prezzo;
+    protected $caratteristiche;
+    protected $info;
 
     //Funzione construct
     function __construct(string $_prodotto, string $_animale,string $_prezzo, string $_caratteristiche, string $_info)
@@ -30,6 +30,4 @@ $kong = new Prodotti('Kong Classic', 'Cane', '13,49','Galleggia e rimbalza','8,5
 $peluche = new Prodotti('Topini di peluche Trixie', 'Gatto', '4.99','Morbido con codina in corda','8.5 cm x 10 cm');
 
 array_push($lista, $royalCanin, $almo, $almoCat, $guppy, $wilma, $filtro, $kong, $peluche);
-
-print_r($lista);
 
