@@ -2,6 +2,10 @@
 require __DIR__.'/models/Prodotti.php';
 require __DIR__.'/models/Categorie.php';
 
+
+//Var_dump di prova 
+var_dump($category);
+var_dump($prodotti);
 ?>
 <!DOCTYPE html>
 <html lang="en">
