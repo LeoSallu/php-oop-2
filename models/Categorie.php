@@ -7,5 +7,10 @@ class Categorie {
         $this -> categorie = $_categoria;
     }
 }
-$category = new Categorie('Cane','Gatto','Ucello','Pesce');
+$cane = new Categorie('Cane');
+$gatto = new Categorie('Gatto');
+$uccello = new Categorie('Uccello');
+$pesce = new Categorie('Pesce');
+
+
 
