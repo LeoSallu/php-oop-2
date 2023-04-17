@@ -1,11 +1,19 @@
 <?php
-
+require_once __DIR__.'/Categorie.php';
 class Prodotti {
-    public $prodotti;
-    function __construct(array $_prodotto)
+    protected $prodotti;
+    protected $animale;
+    protected $prezzo;
+    protected $caratteristiche;
+    protected $info;
+    function __construct(string $_prodotto, string $_animale,int $_prezzo, string $_caratteristiche, string $_info)
     {
         $this -> prodotti = $_prodotto;
+        $this -> animale = $_animale;
+        $this -> prezzo = $_prezzo;
+        $this -> caratteristiche = $_caratteristiche;
+        $this -> info = $_info;
     }
 }
-$prodotti = new Prodotti(['Cibo','Giochi','Accessori','Altro']);
-var_dump($prodotti);
+$prod = new Prodotti('Royal Canin', 'Cane', '43','545g','Prosciutto e Riso');
+var_dump($prod);
