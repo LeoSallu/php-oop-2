@@ -1,16 +1,28 @@
 <?php
 
 class Categorie {
-    public $categorie;
-    function __construct(string $_categoria)
+    private $categorie;
+    private $icon;
+    function __construct(string $_categoria, string $_icon)
     {
         $this -> categorie = $_categoria;
+        $this -> icon = $_icon;
     }
+    public function get_categoria(){
+        return $this->categorie;
+    }
+    public function set_categoria($_categorie){
+        $this-> categorie=$_categorie;
+    }
+    public function get_icon(){
+        return $this->icon;
+    }
+    public function set_icon($_icon){
+        $this-> icon=$_icon;
+    }
+    public function get_all(){
+        return"{$this->icon} {$this->categorie}";
+    }
+
 }
-$cane = new Categorie('Cane');
-$gatto = new Categorie('Gatto');
-$uccello = new Categorie('Uccello');
-$pesce = new Categorie('Pesce');
-
-
 
