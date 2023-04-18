@@ -25,4 +25,8 @@ class Categorie {
     }
 
 }
+$cane = new Categorie('Cane', '<i class="fa-solid fa-dog"></i>');
+$gatto = new Categorie('Gatto', '<i class="fa-solid fa-cat"></i>');
+$uccello = new Categorie('Uccello', '<i class="fa-solid fa-dove"></i>');
+$pesce = new Categorie('Pesce', '<i class="fa-solid fa-fish"></i>');
 

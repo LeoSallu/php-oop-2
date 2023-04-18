@@ -57,4 +57,5 @@ $wilma = new Prodotti('Voliera Wilma in Legno', $uccello, '184.99','Legno','M: L
 $filtro = new Prodotti('Cartucce Filtranti per Filtro EasyCrystal', $pesce,'2.29','Materiale espanso','ND');
 $kong = new Prodotti('Kong Classic', $cane, '13,49','Galleggia e rimbalza','8,5 cm x 10 cm');
 $peluche = new Prodotti('Topini di peluche Trixie', $cane, '4.99','Morbido con codina in corda','8.5 cm x 10 cm');
+$lista = [$royalCanin, $almo, $almoCat, $guppy, $wilma, $filtro, $kong, $peluche];
 

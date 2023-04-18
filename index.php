@@ -3,14 +3,6 @@ require_once __DIR__ . '/models/Prodotti.php';
 require_once __DIR__ . '/models/Categorie.php';
 
 
-
-$lista = [$royalCanin, $almo, $almoCat, $guppy, $wilma, $filtro, $kong, $peluche];
-$cane = new Categorie('Cane','<i class="fa-solid fa-dog"></i>');
-$gatto = new Categorie('Gatto','<i class="fa-solid fa-cat"></i>');
-$uccello = new Categorie('Uccello','<i class="fa-solid fa-dove"></i>');
-$pesce = new Categorie('Pesce','<i class="fa-solid fa-fish"></i>');
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,18 +25,18 @@ $pesce = new Categorie('Pesce','<i class="fa-solid fa-fish"></i>');
                     <div class="card m-2" style="width: 18rem;">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $list->get_prodotti();?></h5>
-                            <p class="card-text"><?php echo $list->get_animale()->get_all();?></span></p>
-                            <p class="card-text"><?php echo $list->get_prezzo();?> €</p>
-                            <p class="card-text"><?php echo $list->get_caratteristiche();?></p>
-                            <p class="card-text"><?php echo $list->get_info();?></p>
+                            <h5 class="card-title"><?php echo $list->get_prodotti(); ?></h5>
+                            <p class="card-text"><?php echo $list->get_animale()->get_all(); ?></span></p>
+                            <p class="card-text"><?php echo $list->get_prezzo(); ?> €</p>
+                            <p class="card-text"><?php echo $list->get_caratteristiche(); ?></p>
+                            <p class="card-text"><?php echo $list->get_info(); ?></p>
                         </div>
                     </div>
                 <?php }; ?>
             </div>
         </div>
     </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>
