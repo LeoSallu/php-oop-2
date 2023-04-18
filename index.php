@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/models/Prodotti.php';
 require_once __DIR__ . '/models/Categorie.php';
-
-
+require_once __DIR__ . '/models/Cibo.php';
+require_once __DIR__ . '/models/Oggetti.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,14 +22,23 @@ require_once __DIR__ . '/models/Categorie.php';
             <h1 class="m-3">Boolshop</h1>
             <div class="col d-flex flex-wrap m-2">
                 <?php foreach ($lista as $list) { ?>
-                    <div class="card m-2" style="width: 18rem;">
+                    <div class="card m-2 p-2" style="width: 18rem;">
                         <img src="<?php echo $list->get_img();?>" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $list->get_prodotti(); ?></h5>
                             <p class="card-text"><?php echo $list->get_animale()->get_all(); ?></span></p>
-                            <p class="card-text"><?php echo $list->get_prezzo(); ?> €</p>
+                            <p class="card-text">Il prezzo è <?php echo $list->get_prezzo(); ?> €</p>
                             <p class="card-text"><?php echo $list->get_caratteristiche(); ?></p>
-                            <p class="card-text"><?php echo $list->get_info(); ?></p>
+                            <!-- Cibo  -->
+                            <?php if (method_exists($list, 'get_ingredienti')):  /** @var Cibo $list */?>
+                               
+                                <p class="card-text">Ingredienti: <?php echo $list->get_ingredienti();?></p>
+                            <?php endif;?>
+                            <!-- Oggetti  -->
+                            <?php if (method_exists($list, 'get_dimensioni')):  /** @var Oggetti $list */?>
+                               
+                               <p class="card-text">Dimensioni: <?php echo $list->get_dimensioni();?></p>
+                           <?php endif;?>
                         </div>
                     </div>
                 <?php }; ?>
