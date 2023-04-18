@@ -23,7 +23,7 @@ require_once __DIR__ . '/models/Categorie.php';
             <div class="col d-flex flex-wrap m-2">
                 <?php foreach ($lista as $list) { ?>
                     <div class="card m-2" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="<?php echo $list->get_img();?>" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $list->get_prodotti(); ?></h5>
                             <p class="card-text"><?php echo $list->get_animale()->get_all(); ?></span></p>
